@@ -2,7 +2,7 @@
 
 End-to-end SQL analysis of a direct-to-consumer skincare brand: 1,250 orders, 500 customers, 28 SKUs and 494 product reviews across six related tables. The goal is to answer the questions a founder or category manager would actually ask — what sells, what makes money, what gets sent back, and which customers come back.
 
-**Tools:** Microsoft SQL Server (SSMS) · Power BI
+**Tools:** Microsoft SQL Server (SSMS)
 
 ---
 
@@ -38,7 +38,7 @@ A star schema with two dimensions and four fact tables.
 | `Returns` | One row per returned item | `return_id`, `order_id`, `product_id`, reason |
 | `Reviews` | One row per review | `review_id`, `customer_id`, `product_id`, rating |
 
-`Orders` → `Order_Items` → `Products` is the main revenue path. `Returns` links to `Products` and `Orders`; in the Power BI model the `Returns` → `Orders` link is removed to avoid an ambiguous circular relationship.
+`Orders` → `Order_Items` → `Products` is the main revenue path. `Returns` and `Reviews` both link back to `Orders`, `Products` and (for Reviews) `Customers`.
 
 ---
 
