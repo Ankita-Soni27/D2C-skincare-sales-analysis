@@ -2,7 +2,7 @@
 
 End-to-end SQL analysis of a direct-to-consumer skincare brand: 1,250 orders, 500 customers, 28 SKUs and 494 product reviews across six related tables. The goal is to answer the questions a founder or category manager would actually ask — what sells, what makes money, what gets sent back, and which customers come back.
 
-**Tools:** Microsoft SQL Server (SSMS) · Power BI
+**Tools:** Microsoft SQL Server (SSMS)
 
 ---
 
